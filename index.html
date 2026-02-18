@@ -8,38 +8,52 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <div class="header">
-    <div class="banner">
-      🍕 D'OH-MINO'S PIZZA
-    </div>
-    <div class="nav">
-      <a href="#">Menu</a>
-      <a href="#">Locations</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
+  <header class="header">
+    <h1 class="brand">🍕 D'OH-MINO'S PIZZA</h1>
+    <nav class="nav">
+      <a href="#menu">Menu</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <div class="info">
-    <p class="tagline">MISTAKES TASTE BETTER WHEN THEY'RE COVERED IN CHEESE</p>
-    <p class="description">
-      Welcome to D'oh-mino's, where we've cut corners in every possible way—except for the cheese. 
-      But at least our pizza is *probably* edible.
-    </p>
-    <a href="#" class="order-now">ORDER NOW</a>
-  </div>
+  <main id="main">
+    <section id="order" class="info">
+      <h2 class="tagline">MISTAKES TASTE BETTER WHEN THEY'RE COVERED IN CHEESE</h2>
+      <p class="description">
+        Welcome to D'oh-mino's, where we've cut corners in every possible way—except for the cheese.
+        But at least our pizza is <em>probably</em> edible.
+      </p>
+      <a href="#menu" class="order-now">Order now</a>
+    </section>
 
-  <div class="main-content">
-    <div class="deal">
-      <img src="img/pizza-deal.jpg">
-      <p>Our most *questionable* deal yet! Get two large pizzas for the price of three.</p>
-    </div>
+    <section id="menu" class="main-content">
+      <h2 class="section-heading">Deals</h2>
+      <div class="deals-grid">
+        <div class="deal">
+          <img src="img/pizza-deal.jpg" alt="Two slices of pepperoni pizza on a metal tray, topped with melted cheese and pepperoni, with French fries visible in the background.">
+          <p>Our most <em>questionable</em> deal yet! Get two large pizzas for the price of three.</p>
+        </div>
 
-    <div class="deal">
-      <img src="img/cold-pizza.jpg">
-      <p>Cold Pizza Sampler. Why wait until the morning to eat cold pizza?</p>
-  </div>
-  </div>
+        <div class="deal">
+          <img src="img/cold-pizza.jpg" alt="A freshly baked vegetable pizza on a wooden serving board, topped with olives, diced tomatoes, herbs, and a creamy sauce drizzle, sliced into pieces on a restaurant table.">
+          <p>Cold Pizza Sampler. Why wait until the morning to eat cold pizza?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="locations" class="info">
+      <h2 class="section-heading">Locations</h2>
+      <p class="description">Find a D'oh-mino's near you in Springfield and beyond.</p>
+    </section>
+
+    <section id="contact" class="info">
+      <h2 class="section-heading">Contact</h2>
+      <p class="description">Call 555-DOH-PIZA or email help@dohminos.example.</p>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 D'oh-mino's Pizza - No refunds, no regrets</p>
